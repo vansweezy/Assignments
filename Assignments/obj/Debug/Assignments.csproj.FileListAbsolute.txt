@@ -1,0 +1,6 @@
+c:\users\van\documents\visual studio 2015\Projects\Assignments\Assignments\bin\Debug\Assignments.exe.config
+C:\Users\van\Documents\Visual Studio 2015\Projects\Assignments\Assignments\obj\Debug\Assignments.csprojResolveAssemblyReference.cache
+C:\Users\van\Documents\Visual Studio 2015\Projects\Assignments\Assignments\bin\Debug\Assignments.exe
+C:\Users\van\Documents\Visual Studio 2015\Projects\Assignments\Assignments\bin\Debug\Assignments.pdb
+C:\Users\van\Documents\Visual Studio 2015\Projects\Assignments\Assignments\obj\Debug\Assignments.exe
+C:\Users\van\Documents\Visual Studio 2015\Projects\Assignments\Assignments\obj\Debug\Assignments.pdb
