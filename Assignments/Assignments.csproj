@@ -43,8 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\DateTime.cs" />
+    <Compile Include="Classes\DayAssignment.cs" />
+    <Compile Include="Classes\EasterSundayAssignment.cs" />
+    <Compile Include="Classes\FibonacciSequence.cs" />
+    <Compile Include="Classes\GoldbachAssignment.cs" />
+    <Compile Include="Classes\Hailstone.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\Validation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
