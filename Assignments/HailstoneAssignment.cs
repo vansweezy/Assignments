@@ -24,43 +24,24 @@ namespace Assignments
             end = Convert.ToInt32(Console.ReadLine());
             end = Validation.CheckEnd(start, end);
 
-            cycleValue = Hailstone.HailstoneValue(start, end);
-            cycleLength = Hailstone.HailstoneCounter(start, end);
+            var result = Hailstone.Calculate(start, end);
+            cycleValue = result.CycleValue;
+            cycleLength = result.CycleLength;
 
             Console.WriteLine("Value: " + cycleValue);
             Console.Write("Longest Cycle: " + cycleLength.ToString());
             Console.ReadLine();
         }
     }
+    class HailstoneResult
+    {
+        public int CycleValue { get; set; }
+        public int CycleLength { get; set; }
+    }
+
     class Hailstone
     {
-        // returns largest counter in hailstone sequence
-        public static int HailstoneCounter(int s, int e)
-        {
-            int n;
-            int counter;
-            int largestCounter = 0;
-
-            for (int i = s; i < e + 1; i++)
-            {
-                n = i;
-                counter = 0;
-                while (n != 1)
-                {
-                    if (n % 2 == 0)
-                        n /= 2;
-                    else if (n % 2 != 0)
-                        n = 3 * n + 1;
-                    counter++;
-                }
-                if (counter > largestCounter)
-                    largestCounter = counter;
-            }
-            return largestCounter;
-        }
-
-        // returns value of the largest counter in hailstone sequence
-        public static int HailstoneValue(int s, int e)
+        public static HailstoneResult Calculate(int s, int e)
         {
             int n;
             int largestValue = 0;
@@ -85,7 +66,11 @@ namespace Assignments
                     largestValue = i;
                 }
             }
-            return largestValue;
+            return new HailstoneResult
+            {
+                CycleValue = largestCounter,
+                CycleLength = largestValue
+            };
         }
     }
 }
